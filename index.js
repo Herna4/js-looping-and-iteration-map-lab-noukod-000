@@ -14,14 +14,9 @@ function nameToAttributes(drivers) {
   
 }  
 
-// function attributesToPhrase(drivers){
-//   return drivers.map(function(driverName){
-//     return '${driverName.name} is from ${driverName.hometown}';
-//   });
-// }
-
-function attributesToPhrase(array) {
-  return array.map(function(driver) {
-    return  `${driver.name} is from ${driver.hometown}`;
+function attributesToPhrase(driver){
+  return driver.map(function(driverName){
+    return '${driverName.name} is from ${driverName.hometown}';
   });
 }
+
