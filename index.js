@@ -7,15 +7,10 @@ function lowerCaseDrivers(drivers) {
   
 function nameToAttributes(drivers) {
    return drivers.map(function (driverName){
-     const driverFirst = driverName.split(' ')[0]
+     const driverFirst = driverName.split(' ')[0];
+     const driverLast = driverName.split(' ')[1];
+    return { firstName: driverFirst, lastName: driverLast };
    });
   
 }  
 
-function nameToAttributes(array) {
-  return array.map(function(driver) {
-    const driverFirst = driver.split(' ')[0];
-    const driverLast = driver.split(' ')[1];
-  return { firstName: driverFirst, lastName: driverLast };
-  });
-}
